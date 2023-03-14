@@ -1,0 +1,23 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/images/pexels-chait-goli-2124699.jpg");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    align-items: center;
+    justify-content: center; 
+}
+
+.Landing-text {
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+#start-btn {
+    font-size: 30px;
+}

@@ -1,19 +1,28 @@
 import React from 'react';
-import NavBar from './components/navbar/NavBar';
+//import NavBar from './components/navbar/NavBar';
 //import SignUp from './SignUp';
 //import Login from './Login';
-import HomePage from './components/herosection/HomePage';
-import FoodList from './components/foodlist/FoodList';
+import LandingPage from './components/landingpage/LandingPage';
+//import HomePage from './components/herosection/HomePage';
+import CheckOut from './components/checkout/CheckOut';
+//import FoodList from './components/foodlist/FoodList';
 //import Search from './Search';
-//import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './components/herosection/HomePage';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <HomePage/>
-      <FoodList/>
+     <BrowserRouter>
+        {/* <HomePage/> */}
+        {/* <NavBar/> */}
+        <Routes>
+          <Route path="/landing" element={<LandingPage/>}/>
+          <Route path="/home" element={<HomePage/>}/>
+          <Route path="/checkout" element={<CheckOut/>} />
+        </Routes>
+     </BrowserRouter>
     </div>
   );
 }
