@@ -1,11 +1,12 @@
 import React from "react";
-import NavBar from "../navbar/NavBar";
+import { Link } from "react-router-dom";
+//import NavBar from "../navbar/NavBar";
 
 function CheckOut () {
 
     return (
         <div>
-            <NavBar/>
+            
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-4 order-md-2 mb-4">
@@ -42,7 +43,7 @@ function CheckOut () {
                         </ul>
                         
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-outline-success">Confirm</button>
+                                <Link type="submit" class="btn btn-outline-success" to="/order">Confirm</Link>
                             </div>
                         
                     </div>

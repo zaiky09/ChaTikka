@@ -5,6 +5,7 @@ import React from 'react';
 import LandingPage from './components/landingpage/LandingPage';
 //import HomePage from './components/herosection/HomePage';
 import CheckOut from './components/checkout/CheckOut';
+import Order from './components/order/Order';
 //import FoodList from './components/foodlist/FoodList';
 //import Search from './Search';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/landing" element={<LandingPage/>}/>
           <Route path="/home" element={<HomePage/>}/>
           <Route path="/checkout" element={<CheckOut/>} />
+          <Route path="/order" element={<Order/>}/>
         </Routes>
      </BrowserRouter>
     </div>
