@@ -11,7 +11,7 @@ function handleClick() {
       <div className="landing">
         <div className="text">         
           <center className="position-absolute top-50 start-50 translate-middle-x">
-            <h1 className="Landing-text">Welcome To ChaTikka</h1>
+            <h1 className="Landing-text">SHAWARMA SHACK</h1>
             <Link 
               className="btn btn-outline-light mt-4" 
               id="start-btn"
